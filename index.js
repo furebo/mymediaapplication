@@ -16,7 +16,7 @@ dotenv.config();
 //make a connection to the mongo database
 
 mongoose.connect(
-  process.env.MONGO_DB,
+  process.env.MONGODB_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to the MongoDb Database succesfully!");
